@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>スマホ使い過ぎ防止アプリ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>スマホ使い過ぎ防止</h1>
+
+        <div class="section" id="current-usage-section">
+            <h2>今日の利用時間</h2>
+            <p><span id="current-usage-display">00:00:00</span></p>
+        </div>
+
+        <div class="section" id="goal-setting-section">
+            <h2>目標時間設定</h2>
+            <div class="input-group">
+                <input type="number" id="goal-hours" min="0" max="23" value="2"> 時間
+                <input type="number" id="goal-minutes" min="0" max="59" value="0"> 分
+                <button id="set-goal-btn">目標設定</button>
+            </div>
+            <p>現在の目標: <span id="current-goal-display">02:00</span></p>
+        </div>
+
+        <div class="section" id="history-section">
+            <h2>利用履歴</h2>
+            <ul id="usage-history-list">
+                </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
